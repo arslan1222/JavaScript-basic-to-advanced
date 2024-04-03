@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 3</title>
+</head>
+<body>
+
+    <p id="js"></p>
+
+    <button onclick="login()" id="jss">Login</button>
+
+    <script>
+        document.addEventListener("click", event);
+        function event(){
+            document.getElementById("js").innerText = "Hello World";
+        }
+
+        function login(){
+            document.getElementById("jss").innerText = "Logout";
+            document.getElementById("jss").style.padding = "15px";
+            document.getElementById("jss").style.color = "green";
+            document.getElementById("jss").style.background = "pink";
+            document.getElementById("jss").style.border = "3px solid yellow";
+        }
+    </script>
+    
+</body>
+</html>
